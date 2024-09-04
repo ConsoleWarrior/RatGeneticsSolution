@@ -89,22 +89,43 @@ namespace RatGenetics
 
         public List<Group> ChildGensGroup(Rat mother, Rat father, Group group, int i)
         {
+            //group.percent
             double[] temp = CalculateLokus(mother.genotype[i], father.genotype[i]);
+            for (int k = 0; k < 4; k++)
+            {
+                temp[k] = temp[k] * group.percent / 100;
+            }
+
             var tempGroups = new List<Group>();
             if (temp[1] > 0)
             {
-                group.genotype[i] = Lokus.h;
-                tempGroups.Add(new Group(temp[1], group.genotype));
+                var tempgen = new Lokus[7];
+                for (int j = 0; j < 7; j++)
+                {
+                    tempgen[j] = group.genotype[j];
+                }
+                tempgen[i] = Lokus.h;
+                tempGroups.Add(new Group(temp[1], tempgen));
             }
             if (temp[2] > 0)
             {
-                group.genotype[i] = Lokus.g;
-                tempGroups.Add(new Group(temp[2], group.genotype));
+                var tempgen = new Lokus[7];
+                for (int j = 0; j < 7; j++)
+                {
+                    tempgen[j] = group.genotype[j];
+                }
+                tempgen[i] = Lokus.g;
+                tempGroups.Add(new Group(temp[2], tempgen));
             }
             if (temp[3] > 0)
             {
-                group.genotype[i] = Lokus.hr;
-                tempGroups.Add(new Group(temp[3], group.genotype));
+                var tempgen = new Lokus[7];
+                for (int j = 0; j < 7; j++)
+                {
+                    tempgen[j] = group.genotype[j];
+                }
+                tempgen[i] = Lokus.hr;
+                tempGroups.Add(new Group(temp[3], tempgen));
             }
             return tempGroups;
         }
