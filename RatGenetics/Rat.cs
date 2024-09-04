@@ -8,7 +8,8 @@ namespace RatGenetics
 {
     public class Rat
     {
-        public Lokus A; public Lokus B; public Lokus C;
+        public Lokus[] genotype = new Lokus[7];
+        //public Lokus A; public Lokus B; public Lokus C;
 
     }
 }

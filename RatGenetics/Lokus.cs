@@ -8,8 +8,9 @@ namespace RatGenetics
 {
     public enum Lokus
     {
-        homo,
-        getero,
-        homoR
+        no,
+        h,
+        g,
+        hr
     }
 }

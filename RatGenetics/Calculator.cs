@@ -12,26 +12,26 @@ namespace RatGenetics
         {
             switch(mother)
             {
-                case Lokus.homo: switch(father)
+                case Lokus.h: switch(father)
                     {
-                        case Lokus.homo: return "100% homo";
-                        case Lokus.getero: return "50% homo, 50% getero";
-                        case Lokus.homoR: return "100% getero";
+                        case Lokus.h: return "100% homo";
+                        case Lokus.g: return "50% homo, 50% getero";
+                        case Lokus.hr: return "100% getero";
                     } break;
-                case Lokus.getero:
+                case Lokus.g:
                     switch (father)
                     {
-                        case Lokus.homo: return "50% homo, 50% getero";
-                        case Lokus.getero: return "25% homo, 50% getero, 25% homoR";
-                        case Lokus.homoR: return "50% getero, 50% homoR";
+                        case Lokus.h: return "50% homo, 50% getero";
+                        case Lokus.g: return "25% homo, 50% getero, 25% homoR";
+                        case Lokus.hr: return "50% getero, 50% homoR";
                     }
                     break;
-                case Lokus.homoR:
+                case Lokus.hr:
                     switch (father)
                     {
-                        case Lokus.homo: return "100% getero";
-                        case Lokus.getero: return "50% getero, 50% homoR";
-                        case Lokus.homoR: return "100% homoR";
+                        case Lokus.h: return "100% getero";
+                        case Lokus.g: return "50% getero, 50% homoR";
+                        case Lokus.hr: return "100% homoR";
                     }
                     break;
             }
