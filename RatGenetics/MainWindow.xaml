@@ -55,50 +55,53 @@
         <StackPanel DockPanel.Dock="Right" Orientation="Vertical">
             <TextBlock Text="Батя" Background="Aqua" TextAlignment="Center"></TextBlock>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Af" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Af" Content="A/A" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Af" Content="A/a" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Af" Content="a/a" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Af" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Af" Content="A/A" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Af" Content="A/a" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Af" Content="a/a" Checked="RadioButton_Checked3f"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Bf" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Bf" Content="B/B" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Bf" Content="B/b" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Bf" Content="b/b" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Bf" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Bf" Content="B/B" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Bf" Content="B/b" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Bf" Content="b/b" Checked="RadioButton_Checked3f"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Cf" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Cf" Content="C/C" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Cf" Content="C/c" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Cf" Content="c/c" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Cf" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Cf" Content="C/C" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Cf" Content="C/c" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Cf" Content="c/c" Checked="RadioButton_Checked3f"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Gf" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Gf" Content="G/G" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Gf" Content="G/g" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Gf" Content="g/g" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Gf" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Gf" Content="G/G" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Gf" Content="G/g" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Gf" Content="g/g" Checked="RadioButton_Checked3f"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Pf" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Pf" Content="P/P" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Pf" Content="P/p" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Pf" Content="p/p" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Pf" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Pf" Content="P/P" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Pf" Content="P/p" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Pf" Content="p/p" Checked="RadioButton_Checked3f"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Rf" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Rf" Content="R/R" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Rf" Content="R/r" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Rf" Content="r/r" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Rf" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Rf" Content="R/R" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Rf" Content="R/r" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Rf" Content="r/r" Checked="RadioButton_Checked3f"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <RadioButton GroupName="Mf" Content="no" IsChecked="True" Checked="RadioButton_Checked0"/>
-                <RadioButton GroupName="Mf" Content="M/M" Checked="RadioButton_Checked1"/>
-                <RadioButton GroupName="Mf" Content="M/m" Checked="RadioButton_Checked2"/>
-                <RadioButton GroupName="Mf" Content="m/m" Checked="RadioButton_Checked3"/>
+                <RadioButton GroupName="Mf" Content="no" IsChecked="True" Checked="RadioButton_Checked0f"/>
+                <RadioButton GroupName="Mf" Content="M/M" Checked="RadioButton_Checked1f"/>
+                <RadioButton GroupName="Mf" Content="M/m" Checked="RadioButton_Checked2f"/>
+                <RadioButton GroupName="Mf" Content="m/m" Checked="RadioButton_Checked3f"/>
             </StackPanel>
         </StackPanel>
 
         <Button DockPanel.Dock="Bottom" Background="LightGreen" Content="Рассчитать спиногрызов" Click="Button_Click"/>
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Padding="5"
+                  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
         <TextBlock Name="TextBox1" Background="Beige" TextAlignment="Center">результат</TextBlock>
+        </ScrollViewer>
     </DockPanel>
 </Window>

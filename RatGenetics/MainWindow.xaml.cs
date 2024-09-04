@@ -22,7 +22,7 @@ namespace RatGenetics
     {
         public Rat mother = new Rat();
         public Rat father = new Rat();
-        private Calculator calculator = new Calculator();
+        //private Calculator calculator = new Calculator();
 
         public MainWindow()
         {
@@ -31,7 +31,24 @@ namespace RatGenetics
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            var calculator = new Calculator();
+            StringBuilder sb = new StringBuilder();
+            calculator.Calculate(mother, father);
+            foreach(var item in calculator.groups)
+            {
+                sb.Append(item.ToString());
+            }
+            //foreach(var i in mother.genotype)
+            //{
+            //    sb.Append(i.ToString()+";");
+            //}
+            //sb.Append('\n');
+            //foreach (var i in father.genotype)
+            //{
+            //    sb.Append(i.ToString() + ";");
+            //}
+            TextBox1.Text = sb.ToString();
+            //sb.Clear();
             //TextBox1.Text = "A: "+calculator.Calculate(mother.A, father.A)+"\n B: "+ calculator.Calculate(mother.B, father.B)+"\n C: "+ calculator.Calculate(mother.C, father.C);
             //TextBox1.Text = mother.A.ToString()+"\n" + mother.B.ToString()+ "\n"+ mother.C.ToString()+ "\n\n"+ father.A.ToString() + "\n" + father.B.ToString() + "\n" + father.C.ToString();
         }
