@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Calculator.cs" />
     <Compile Include="Group.cs" />
+    <Compile Include="GroupView.cs" />
     <Compile Include="Lokus.cs" />
     <Compile Include="Rat.cs" />
     <Page Include="MainWindow.xaml">
