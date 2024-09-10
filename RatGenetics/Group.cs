@@ -77,7 +77,7 @@ namespace RatGenetics
                         case Lokus.hr: letters[i] = "mm"; break;
                     };
             }
-            return $"{percent}%: {letters[0]} / {letters[1]} / {letters[2]} / {letters[3]} / {letters[4]} / {letters[5]} / {letters[6]}\n";
+            return $"{percent}%: {letters[0]} / {letters[1]} / {letters[2]} / {letters[3]} / {letters[4]} / {letters[5]} / {letters[6]}";
         }
     }
 }

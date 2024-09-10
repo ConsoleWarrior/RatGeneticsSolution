@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace RatGenetics
 {
-    public class GroupView
+    public class ColorType
     {
-        public double percent;
-        public string[] lokuses;
+        public Lokus[] black = { Lokus.hr, Lokus.g, Lokus.no, Lokus.no, Lokus.no, Lokus.no, Lokus.no };
     }
 }

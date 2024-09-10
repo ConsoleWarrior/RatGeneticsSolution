@@ -55,9 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Analyzer.cs" />
     <Compile Include="Calculator.cs" />
+    <Compile Include="ColorType.cs" />
     <Compile Include="Group.cs" />
-    <Compile Include="GroupView.cs" />
     <Compile Include="Lokus.cs" />
     <Compile Include="Rat.cs" />
     <Page Include="MainWindow.xaml">

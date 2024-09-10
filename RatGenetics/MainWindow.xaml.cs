@@ -29,16 +29,19 @@ namespace RatGenetics
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var calculator = new Calculator();
+            var analyzer = new Analyzer();
             StringBuilder sb = new StringBuilder();
             int count = 1;
 
             calculator.Calculate(mother, father);
             foreach (var item in calculator.groups)
             {
-                sb.Append("№"+count + " "+ item.ToString());
+                sb.Append("№" + count + " " + item.ToString() + analyzer.ColorType(item)+"\n");
                 count++;
             }
-
+            analyzer.Analyzation(calculator.groups);
+            sb.Append(analyzer.ToString());
+            sb.Append(analyzer.GroupPercent());
             TextBox1.Text = sb.ToString();
         }
 
